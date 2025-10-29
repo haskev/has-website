@@ -1,1 +1,59 @@
 @import 'tailwindcss';
+
+@font-face {
+	font-family: Annexxus;
+	src: url('../src/lib/assets/fonts/Annexxus-Regular.otf');
+}
+
+/* --- Annexxus Regular --- */
+@font-face {
+	font-family: 'Annexxus';
+	src: url('../src/lib/assets/fonts/Annexxus-Regular.otf') format('opentype');
+	font-weight: 400;
+	/* 400 is 'normal' */
+	font-style: normal;
+	font-display: swap;
+}
+
+/* --- Annexxus Italic --- */
+@font-face {
+	font-family: 'Annexxus';
+	src: url('../src/lib/assets/fonts/Annexxus-Italic.otf') format('opentype');
+	font-weight: 400;
+	/* Italic is still normal weight */
+	font-style: italic;
+	font-display: swap;
+}
+
+/* --- Annexxus Bold --- */
+@font-face {
+	font-family: 'Annexxus';
+	src: url('../src/lib/assets/fonts/Annexxus-Bold.otf') format('opentype');
+	font-weight: 700;
+	/* 700 is 'bold' */
+	font-style: normal;
+	font-display: swap;
+}
+
+/* --- Annexxus Bold Italic --- */
+@font-face {
+	font-family: 'Annexxus';
+	src: url('../src/lib/assets/fonts/Annexxus-BoldItalic.otf') format('opentype');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* --- Annexxus Bold Oblique --- */
+/* Oblique is a distinct style from Italic */
+@font-face {
+	font-family: 'Annexxus';
+	src: url('../src/lib/assets/fonts/Annexxus-BoldOblique.otf') format('opentype');
+	font-weight: 700;
+	font-style: oblique;
+	font-display: swap;
+}
+
+@theme {
+	--font-annexxus: Annexxus, 'sans-serif';
+}
