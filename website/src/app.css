@@ -1,59 +1,64 @@
 @import 'tailwindcss';
 
+/* --- Anxs Regular --- */
 @font-face {
-	font-family: Annexxus;
-	src: url('../src/lib/assets/fonts/Annexxus-Regular.otf');
-}
-
-/* --- Annexxus Regular --- */
-@font-face {
-	font-family: 'Annexxus';
-	src: url('../src/lib/assets/fonts/Annexxus-Regular.otf') format('opentype');
+	font-family: 'Anxs';
+	src: url('../src/lib/assets/fonts/Anxs-Regular.otf') format('opentype');
 	font-weight: 400;
 	/* 400 is 'normal' */
 	font-style: normal;
 	font-display: swap;
 }
 
-/* --- Annexxus Italic --- */
+/* --- Anxs Italic --- */
 @font-face {
-	font-family: 'Annexxus';
-	src: url('../src/lib/assets/fonts/Annexxus-Italic.otf') format('opentype');
+	font-family: 'Anxs';
+	src: url('../src/lib/assets/fonts/Anxs-Italic.otf') format('opentype');
 	font-weight: 400;
 	/* Italic is still normal weight */
 	font-style: italic;
 	font-display: swap;
 }
 
-/* --- Annexxus Bold --- */
+/* --- Anxs Bold --- */
 @font-face {
-	font-family: 'Annexxus';
-	src: url('../src/lib/assets/fonts/Annexxus-Bold.otf') format('opentype');
+	font-family: 'Anxs';
+	src: url('../src/lib/assets/fonts/Anxs-Bold.otf') format('opentype');
 	font-weight: 700;
 	/* 700 is 'bold' */
 	font-style: normal;
 	font-display: swap;
 }
 
-/* --- Annexxus Bold Italic --- */
+/* --- Anxs Bold Italic --- */
 @font-face {
-	font-family: 'Annexxus';
-	src: url('../src/lib/assets/fonts/Annexxus-BoldItalic.otf') format('opentype');
+	font-family: 'Anxs';
+	src: url('../src/lib/assets/fonts/Anxs-BoldItalic.otf') format('opentype');
 	font-weight: 700;
 	font-style: italic;
 	font-display: swap;
 }
 
-/* --- Annexxus Bold Oblique --- */
+/* --- Anxs Bold Oblique --- */
 /* Oblique is a distinct style from Italic */
 @font-face {
-	font-family: 'Annexxus';
-	src: url('../src/lib/assets/fonts/Annexxus-BoldOblique.otf') format('opentype');
+	font-family: 'Anxs';
+	src: url('../src/lib/assets/fonts/Anxs-BoldOblique.otf') format('opentype');
 	font-weight: 700;
 	font-style: oblique;
 	font-display: swap;
 }
 
 @theme {
-	--font-annexxus: Annexxus, 'sans-serif';
+	--font-anxs: Anxs, 'sans-serif';
+}
+
+@layer base {
+	:root {
+		@apply font-anxs text-slate-800 tracking-wide;
+	}
+
+	a {
+		@apply text-blue-600 hover:underline;
+	}
 }
